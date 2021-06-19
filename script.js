@@ -8,13 +8,12 @@ for (var i = 0, len = g.length; i < len; i++)
         
         }    
     })(i);
-
 }
 for(var i = 0, len = g.length; i < len; i++){
     var oov =window.localStorage.getItem(('emailform'+i))?window.localStorage.getItem(('emailform'+i)):"";
     $('.eform.input:eq('+i+')').val(oov);
 }
-document.querySelector(".eform.input.content").addEventListener("keyup", function countWord() {
+$(".eform.input.content").on("keyup", function countWord() {
 		let res = [];
 		let str = this.value.replace(/[\t\n\r\.\?\!]/gm, " ").split(" ");
 		str.map((s) => {
@@ -31,7 +30,15 @@ document.querySelector(".eform.input.content").addEventListener("keyup", functio
             var eEmail = $(".eform.input.email").val();
             var eWebsite = $(".eform.input.website").val();
             var eTitle = $(".eform.input.title").val();
+            var eimgurl = $(".eform.input.imgurl").val();
             var eContent = $(".eform.input.content").val();
         window.location.href = "mailto:admin@mrlaboratory.com?Subject="+eTitle+"&body="+eContent;
         })
-        
+    $(".pastimgurl").on("click",function(){
+        let pasteArea = document.querySelector('.eform.input.imgurl');
+        pasteArea.value = '';
+        navigator.clipboard.readText()
+        .then((text)=>{
+            pasteArea.value = text;
+        });
+   })

@@ -76,4 +76,17 @@ p.wordcounterr {
     background-color: #eeeeee;
     box-shadow: -9px -9px 18px #ffffff, 9px 9px 18px #cdcdcd;
 }
-
+button.pastimgurl {
+    position: absolute;
+    padding: 10px;
+    right: 5px;
+    top: 18px;
+    background: #e4ebf5;
+    box-shadow: 0.3rem 0.3rem 0.6rem var(--greyLight-2), -0.2rem -0.2rem 0.5rem var(--white);
+    border: none;
+    outline: none;
+    width: 60px;
+    height: 28px;
+    cursor: pointer;
+    border-radius: 5px;
+}
