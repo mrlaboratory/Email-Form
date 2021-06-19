@@ -1,0 +1,51 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+body{
+    background-color: #eeeeee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.emailDiv-container {
+    margin: 10% 0;
+    flex-direction: row;
+    width: 900px;
+    max-width: 90%;
+    box-shadow: 9px 9px 18px #cdcdcd, -9px -9px 18px #ffffff;
+    padding: 20px;
+    border-radius: 6px;
+}
+.emailDiv-container  form {
+    width: 100%;
+}
+.emailDiv-container .input{
+    padding: 0.5em;
+    font-size: 14px;
+    width: 100%;
+    resize: vertical;
+    margin-top: 1em;
+    background: #eeeeee;
+    border: none;
+    box-shadow: inset 5px 5px 12px #e0e0e0, inset -5px -5px 12px #fcfcfc;
+    outline: none;
+    color: #52565e;
+    border-radius: 6px;
+}
+.emailDiv-container .sbutton{
+    box-shadow: -9px -9px 18px #ffffff, 9px 9px 18px #cdcdcd;
+    outline: none;
+    border: none;
+    width: 100%;
+    height: 35px;
+    margin-top: 17px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+textarea.input.title{
+    width: 100%;
+    height: 50px;
+}
